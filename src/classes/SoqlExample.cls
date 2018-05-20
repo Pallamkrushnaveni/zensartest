@@ -10,6 +10,7 @@ public list<account> lact{set;get;}
      system.debug('hi this is local repository change');
         system.debug('hi this is remote repository to local repository');
         system.debug('Changes in branch sprint-001');
+        system.debug('Changes local in branch to remote subbranch sprint-001');
     }
     public void sqoloffset(){
     lact=[select name,type,industry from account offset 6];
