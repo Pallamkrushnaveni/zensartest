@@ -8,7 +8,8 @@ public list<account> lact{set;get;}
     public void sqollimit(){
     lact=[select name,type,industry from account limit 5];
      system.debug('hi this is local repository change');
-     system.debug('changes are moving in to server');
+     system.debug('I am sql');
+     
     }
     public void sqoloffset(){
     lact=[select name,type,industry from account offset 6];
