@@ -1,6 +1,7 @@
 public class SoqlExample{
 
 public list<account> lact{set;get;}
+public list<account> lact1{set;get;}    
     public SoqlExample(){
         lact=[select name,type,industry from account];
         system.debug('hi'+lact);
