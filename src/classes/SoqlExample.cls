@@ -5,10 +5,12 @@ public list<account> lact{set;get;}
         lact=[select name,type,industry from account];
         system.debug('hi'+lact);
     }
+     public void SoqlExample001(){
+        lact=[select name,type,industry from account];
+        system.debug('hi new method is added');
+    }
     public void sqollimit(){
     lact=[select name,type,industry from account limit 5];
-     system.debug('hi this is local repository change');
-     system.debug('I am sql');
      
     }
     public void sqoloffset(){
